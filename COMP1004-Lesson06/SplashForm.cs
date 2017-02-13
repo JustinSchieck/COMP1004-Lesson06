@@ -21,13 +21,13 @@ namespace COMP1004_Lesson06
         {
 
             // 1. Instantiate the next form
-            CalculatorForm calculatorForm = new CalculatorForm();
+            AbilityForm abilityForm = new AbilityForm();
 
             // 2. pass a reference to the current form to the next form
-            calculatorForm.previousForm = this;
+            abilityForm.PreviousForm = this;
 
             this.SplashFormTimer.Enabled = false;
-            calculatorForm.Show();
+            abilityForm.Show();
             this.Hide();
 
 
